@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:adms="http://www.w3.org/ns/adms#"
+   xmlns:dcat="http://www.w3.org/ns/dcat#"
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+>
+  <rdf:Description rdf:nodeID="DCTLocation1b95228ff09991a75fc9f09d8c2c4147f13007aa955a7dfdca9492e15d8034ff">
+    <dct:identifier rdf:resource="http://sws.geonames.org/798544/"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="VcardKind">
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    <vcard:fn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KPRM</vcard:fn>
+    <vcard:hasEmail rdf:resource="mailto:kontakt@dane.gov.pl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/data-theme">
+    <dct:title xml:lang="en">Data theme</dct:title>
+    <dct:title xml:lang="pl">Kategoria danych</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/data-theme/SOCI">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/data-theme"/>
+    <skos:prefLabel xml:lang="en">Population and society</skos:prefLabel>
+    <skos:prefLabel xml:lang="pl">Ludność i społeczeństwo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/file-type/CSV">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/file-type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/file-type/XLS">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/file-type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/frequency/UNKNOWN">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Frequency"/>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/frequency"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/language/ENG">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/language/POL">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/adms/status/1.0">
+    <dct:title xml:lang="en">Status</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/adms/status/Completed">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://purl.org/adms/status/1.0"/>
+    <skos:prefLabel xml:lang="en">Completed</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dane.gov.pl/pl/dataset/2114,baza-przedsiebiorstw-spolecznych">
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/UNKNOWN"/>
+    <dct:description xml:lang="en">&lt;p&gt;Baza w której znajdują się wszystkie przedsiębiorstwa społeczne z całego kraju.&lt;/p&gt;
+
+&lt;p&gt;Dane archiwalne.&lt;/p&gt;</dct:description>
+    <dct:description xml:lang="pl">&lt;p&gt;Baza w której znajdują się wszystkie przedsiębiorstwa społeczne z całego kraju.&lt;/p&gt;
+
+&lt;p&gt;Dane archiwalne.&lt;/p&gt;</dct:description>
+    <dct:identifier>https://dane.gov.pl/pl/dataset/2114,baza-przedsiebiorstw-spolecznych</dct:identifier>
+    <dct:issued>2021-04-22T08:08:01.070155+00:00</dct:issued>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/POL"/>
+    <dct:modified>2024-12-23T13:04:58.131276+00:00</dct:modified>
+    <dct:publisher rdf:resource="https://dane.gov.pl/pl/institution/30,ministerstwo-rodziny-pracy-i-polityki-spolecznej"/>
+    <dct:spatial rdf:nodeID="DCTLocation1b95228ff09991a75fc9f09d8c2c4147f13007aa955a7dfdca9492e15d8034ff"/>
+    <dct:title xml:lang="en">Baza przedsiębiorstw Społecznych - dane archiwalne</dct:title>
+    <dct:title xml:lang="pl">Baza przedsiębiorstw Społecznych - dane archiwalne</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    <owl:versionInfo>None</owl:versionInfo>
+    <dcat:contactPoint rdf:nodeID="VcardKind"/>
+    <dcat:distribution rdf:resource="https://dane.gov.pl/pl/dataset/2114/resource/40748"/>
+    <dcat:distribution rdf:resource="https://dane.gov.pl/pl/dataset/2114/resource/40749"/>
+    <dcat:keyword>baza danych</dcat:keyword>
+    <dcat:keyword>przedsiębiorstwa</dcat:keyword>
+    <dcat:keyword>społeczne</dcat:keyword>
+    <dcat:landingPage rdf:resource="https://dane.gov.pl/pl/dataset/2114,baza-przedsiebiorstw-spolecznych"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dane.gov.pl/pl/dataset/2114/resource/40748">
+    <dct:description xml:lang="en">&lt;p&gt;Baza przedsiębiorstw Społecznych&lt;/p&gt;</dct:description>
+    <dct:description xml:lang="pl">&lt;p&gt;Baza przedsiębiorstw Społecznych&lt;/p&gt;</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-17T08:50:42.056648+00:00</dct:issued>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/POL"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-24T13:55:16.630840+00:00</dct:modified>
+    <dct:title xml:lang="en">Baza przedsiębiorstw Społecznych</dct:title>
+    <dct:title xml:lang="pl">Baza przedsiębiorstw Społecznych</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+    <dcat:accessURL rdf:resource="https://dane.gov.pl/pl/dataset/2114/resource/40748"/>
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">987810</dcat:byteSize>
+    <dcat:downloadURL rdf:resource="https://api.dane.gov.pl/resources/40748,baza-przedsiebiorstw-spoecznych/file"/>
+    <dcat:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/legalcode.pl"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/plain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dane.gov.pl/pl/dataset/2114/resource/40749">
+    <dct:description xml:lang="en">&lt;p&gt;Baza przedsiębiorstw Społecznych&lt;/p&gt;</dct:description>
+    <dct:description xml:lang="pl">&lt;p&gt;Baza przedsiębiorstw Społecznych&lt;/p&gt;</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XLS"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-17T08:51:10.702303+00:00</dct:issued>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/POL"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-24T13:52:01.165072+00:00</dct:modified>
+    <dct:title xml:lang="en">Baza przedsiębiorstw Społecznych</dct:title>
+    <dct:title xml:lang="pl">Baza przedsiębiorstw Społecznych</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+    <dcat:accessURL rdf:resource="https://dane.gov.pl/pl/dataset/2114/resource/40749"/>
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1713664</dcat:byteSize>
+    <dcat:downloadURL rdf:resource="https://api.dane.gov.pl/resources/40749,baza-przedsiebiorstw-spoecznych/file"/>
+    <dcat:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/legalcode.pl"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/application/vnd.ms-excel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dane.gov.pl/pl/institution/30,ministerstwo-rodziny-pracy-i-polityki-spolecznej">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <foaf:mbox>info@mrips.gov.pl</foaf:mbox>
+    <foaf:name xml:lang="en">Ministerstwo Rodziny, Pracy i Polityki Społecznej</foaf:name>
+    <foaf:name xml:lang="pl">Ministerstwo Rodziny, Pracy i Polityki Społecznej</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.iana.org/assignments/media-types/application/vnd.ms-excel">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.iana.org/assignments/media-types/text/plain">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
+  </rdf:Description>
+</rdf:RDF>

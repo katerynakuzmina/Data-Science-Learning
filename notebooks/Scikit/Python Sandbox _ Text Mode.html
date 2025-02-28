@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://pythonsandbox.com/ -->
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+		
+		<title>Python Sandbox  | Text Mode</title>
+
+		
+
+
+		<link rel="icon" type="image/png" href="https://pythonsandbox.com/images/logo_python_no-text.png">
+
+
+
+		<!-- Bootstrap & Other CSS -->
+
+		<link rel="stylesheet" href="./Python Sandbox _ Text Mode_files/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<link media="all" type="text/css" rel="stylesheet" href="./Python Sandbox _ Text Mode_files/bootstrap.superhero.min.css">
+
+
+
+
+		
+	<link media="all" type="text/css" rel="stylesheet" href="./Python Sandbox _ Text Mode_files/codemirror.css">
+
+		<!-- <link rel="stylesheet" href="./css/codemirror.css"> -->
+		<link media="all" type="text/css" rel="stylesheet" href="./Python Sandbox _ Text Mode_files/base16-dark.css">
+
+		<!-- <link rel="stylesheet" href="./css/base16-dark.css"> -->
+		<link media="all" type="text/css" rel="stylesheet" href="./Python Sandbox _ Text Mode_files/sandbox.css">
+
+		<!-- <link rel="stylesheet" href="./css/sandbox.css"> -->
+
+
+
+		<!-- Javascript -->
+
+		<script type="text/javascript" async="" src="./Python Sandbox _ Text Mode_files/analytics.js.Без названия"></script><script type="text/javascript" async="" src="./Python Sandbox _ Text Mode_files/js"></script><script src="./Python Sandbox _ Text Mode_files/jquery.min.js.Без названия" type="text/javascript"></script>
+
+
+
+		
+	<script src="./Python Sandbox _ Text Mode_files/codemirror-custom.js.Без названия"></script>
+
+
+	<script src="./Python Sandbox _ Text Mode_files/skulpt.min.js.Без названия"></script>
+
+
+	<script src="./Python Sandbox _ Text Mode_files/codemirror-custom.js.Без названия"></script>
+
+
+	<script src="./Python Sandbox _ Text Mode_files/skulpt-stdlib.js.Без названия"></script>
+
+
+	<script src="./Python Sandbox _ Text Mode_files/sandbox.js.Без названия"></script>
+
+
+
+
+
+
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+		<!--[if lt IE 9]>
+
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./Python Sandbox _ Text Mode_files/js(1)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-10538200-12');
+</script>
+
+
+
+		<div class="navbar navbar-default navbar-fixed-top">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <a href="https://pythonsandbox.com/" class="navbar-brand">Python Sandbox</a>
+
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-main">
+
+          <ul class="nav navbar-nav">
+
+          
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="https://pythonsandbox.com/#" id="modes">Modes <span class="caret"></span></a>
+
+              <ul class="dropdown-menu" aria-labelledby="modes">
+
+                <li><a href="https://pythonsandbox.com/" target="_blank">Text Mode</a></li>
+
+                <li><a href="https://pythonsandbox.com/turtle" target="_blank">Turtle Mode</a></li>
+
+                <li><a href="https://pythonsandbox.com/graphics" target="_blank">Graphics Mode</a></li>
+
+              </ul>
+
+            </li>
+
+            <li class="dropdown">
+
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="https://pythonsandbox.com/#" id="modes">Docs <span class="caret"></span></a>
+
+              <ul class="dropdown-menu" aria-labelledby="docs">
+
+                
+                <li><a href="https://pythonsandbox.com/docs/turtle" target="_blank">Turtle Docs</a></li>
+
+                <li><a href="https://pythonsandbox.com/docs/graphics" target="_blank">Graphics Docs</a></li>
+
+              </ul>
+
+            </li>
+
+            <li><a href="https://pythonsandbox.com/about" target="_blank">About Python Sandbox</a></li>
+
+            <li><a href="https://pythonsandbox.com/contact" target="_blank">Contact</a></li>
+
+
+
+
+          </ul>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+		<div class="page-content">
+
+			
+		<div class="page-header">
+
+			<form method="POST" action="https://pythonsandbox.com/code" accept-charset="UTF-8"><input name="_token" type="hidden" value="SCiljde8vwqil8EodXOEx4YbvW1caLFT3HrVNBJJ">
+
+			<input name="mode" type="hidden" value="text">
+
+			<input name="save-as-next" type="hidden" value="0">
+
+			<input name="save-as-last" type="hidden" value="0">
+
+			<input name="save-as-new" type="hidden" value="0">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-xs-12">
+
+						<p></p>
+
+						
+						<div class="alert alert-info">
+
+                			<p><strong>Write your own Python Code!</strong></p>Type your code in the editor window.  When finished, press the play button to run your code.
+
+              			</div>
+
+					</div>
+
+
+
+				</div>
+
+
+
+				<div class="row">
+
+					<div class="col-xs-12 col-md-6 window-container">
+
+						<div class="row">
+
+							<div class="col-xs-12">
+
+								<p class="lead">Editor Window</p>
+
+								<textarea id="sandbox" style="display: none;">print 'hello'</textarea><div class="CodeMirror cm-s-base16-dark CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 25.4219px; left: 82.5px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: -17px; border-right-width: 13px; min-height: 72px; min-width: 130.75px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 53.5px; top: 21.4219px; height: 21.4219px;">&nbsp;</div></div><div class="CodeMirror-code"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-variable">a</span> = (<span class="cm-number">10</span>, <span class="cm-string">'abc'</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-builtin">len</span>(<span class="cm-variable">a</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; top: 72px; border-bottom: 0px solid transparent;"></div><div class="CodeMirror-gutters" style="height: 613px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+
+								
+								
+							<textarea id="mirror" name="mirror" class="hidden">a = (10, 'abc')
+len(a)
+</textarea></div>
+
+							<div class="col-xs-12 button-row">
+
+								<button type="button" class="btn btn-info runner"><span class="glyphicon glyphicon-play"></span></button>
+
+								<button type="button" class="btn btn-default btn-submit"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+
+								
+								<div class="pull-right">
+
+									<button type="button" class="btn btn-default wrapper" data-wrap="false" title="Line Wrapping Toggle"><span class="glyphicon glyphicon-eye-close"></span></button>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-xs-12 col-md-6 window-container">
+
+						<p class="lead">Output Window</p>
+
+						<pre id="output"></pre>
+
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</form>
+
+	</div>
+
+
+
+	<div id="modal" class="modal fade" tabindex="-1" role="dialog">
+
+		<div class="modal-dialog">
+
+		<div class="modal-content">
+
+		  <div class="modal-header">
+
+		    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+		    <h4 class="modal-title">Ooops...</h4>
+
+		  </div>
+
+		  <div class="modal-body">
+
+		  </div>
+
+		  <div class="modal-footer">
+
+		    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+		  </div>
+
+		</div><!-- /.modal-content -->
+
+		</div><!-- /.modal-dialog -->
+
+	</div><!-- /.modal -->	
+<div id="modal-save" class="modal fade" tabindex="-1" role="dialog">
+
+		<div class="modal-dialog">
+
+			<div class="modal-content">
+
+			  <div class="modal-header">
+
+			    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+			    <h4 class="modal-title">Save Notice...</h4>
+
+			  </div>
+
+			  <div class="modal-body"><p class="text-warning">The file you are saving already has a later revision.</p><p>If you save as normal, the next revision in this file series will be overwritten. Alternatively, you may either select to save as a new revision (which could cause discontinuity of progression in your revisions), or save as an entirely new program/file.</p>
+
+			  </div>
+
+			  <div class="modal-footer">
+
+			    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+
+			    <button type="button" class="btn btn-success btn-save" id="btn-save-next" data-field="save-as-next">Overwrite Revision</button>
+
+			    <button type="button" class="btn btn-success btn-save" id="btn-save-last" data-field="save-as-last">New Revision</button>
+
+			    <button type="button" class="btn btn-success btn-save" id="btn-save-new" data-field="save-as-new">New File</button>
+
+			  </div>
+
+			</div><!-- /.modal-content -->
+
+		</div><!-- /.modal-dialog -->
+
+	</div><!-- /.modal -->
+
+
+
+	<div id="modal-checking" class="modal fade" tabindex="-1" role="dialog">
+
+		<div class="modal-dialog">
+
+			<div class="modal-content">
+
+			  <div class="modal-header">
+
+			    <h4 class="modal-title">Please wait...</h4>
+
+			  </div>
+
+			  <div class="modal-body"><p class="text-warning">We're checking the status of your current file.  This should only take a few seconds.</p></div>
+
+			</div><!-- /.modal-content -->
+
+		</div><!-- /.modal-dialog -->
+
+	</div><!-- /.modal -->
+
+
+
+	<div id="modal-error" class="modal fade" tabindex="-1" role="dialog">
+
+		<div class="modal-dialog">
+
+			<div class="modal-content">
+
+			  <div class="modal-header">
+
+			    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+			    <h4 class="modal-title">Uh oh...</h4>
+
+			  </div>
+
+			  <div class="modal-body">
+
+			  	Sorry, an error occurred when talking to our server.  Please try to save again later.
+
+			  </div>
+
+			  <div class="modal-footer">
+
+			    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+			  </div>
+
+			</div><!-- /.modal-content -->
+
+		</div><!-- /.modal-dialog -->
+
+	</div><!-- /.modal -->	
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+
+
+		<!-- Bootstrap JavaScript -->
+
+		<script src="./Python Sandbox _ Text Mode_files/bootstrap.min.js.Без названия" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+		
+		<script src="./Python Sandbox _ Text Mode_files/sandbox-saving.js.Без названия"></script>
+ 
+
+ 		<script>
+
+		  (function($) {
+
+		  	$(document).ready(function() {
+
+
+
+				var ps = new PythonSandbox({
+
+					codeSourceId:'sandbox',
+
+					codeDisplayId:'output',
+
+					turtleDisplayId:'canvas',
+
+					codeMirrorId:'mirror',
+
+					logToConsole: false,
+
+					// errorHandler: function(txt) {myCustomErrorHandler(txt);}
+
+				});
+
+
+
+				$('.runner').click(function() {
+
+					ps.execute();
+
+				});
+
+
+
+				$('.wrapper').click(function() {
+
+					var wrapping = $(this).data('wrap') || $(this).data('wrap') == 'true';
+
+					ps.toggleWrapping(!wrapping);
+
+					$(this).data('wrap',!wrapping);
+
+					$(this).toggleClass('btn-danger btn-default');
+
+				});
+
+
+
+				function myCustomErrorHandler(txt) {
+
+					$('#modal .modal-body').html(txt);
+
+					$('#modal').modal('show');
+
+				}
+
+		  	});
+
+		  })(jQuery);
+
+		</script>
+
+
+
+
+		<footer>
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-xs-12 text-center">© 2025 Ken H. Burres III | Powered by Digital Ocean.</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+
+	
+
+
+</body></html>
