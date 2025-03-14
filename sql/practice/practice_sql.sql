@@ -201,3 +201,58 @@ SELECT
 FROM (SELECT COUNT(*) AS number_of_visits 
       FROM admissions
       GROUP BY admission_date);
+
+
+SELECT 
+	COUNT(*) AS patients_in_group,
+    FLOOR(weight/10)*10 AS weight_group
+FROM patients
+GROUP BY weight_group
+ORDER BY weight_group DESC;
+
+
+SELECT 
+	patient_id,
+    weight,
+    height,
+    cASE 
+    	WHEN weight/(POWER(height, 2)/10000) >= 30 
+        THEN 1
+        ELSE 0
+    END AS isObese
+FROM patients;
+
+
+SELECT 
+	p.patient_id,
+    p.first_name,
+    p.last_name,
+    specialty
+FROM patients p 
+	JOIN admissions a ON (p.patient_id=a.patient_id)
+    JOIN doctors d ON (a.attending_doctor_id=d.doctor_id)
+WHERE diagnosis = 'Epilepsy' AND
+	d.first_name = 'Lisa';
+
+
+
+SELECT 
+	patient_id,
+    CONCAT(patient_id, LEN(last_name), YEAR(birth_date)) AS temp_password
+FROM patients
+WHERE patient_id in 
+(SELECT patient_id FROM admissions);
+
+
+
+SELECT 
+	CASE
+    	WHEN patient_id%2 = 0 THEN 'Yes'
+        ELSE 'No'
+    END AS has_insurance,
+    CASE
+    	WHEN patient_id%2 = 0 THEN COUNT(*)*10
+        ELSE COUNT(*)*50
+    END AS cost_after_insurance
+FROM admissions
+GROUP BY has_insurance;
